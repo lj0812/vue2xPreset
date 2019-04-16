@@ -1,5 +1,4 @@
 module.exports = (api, options = {}) => {
-  console.log('router', options)
   api.injectImports(api.entryFile, `import router from './router'`)
   api.injectRootOptions(api.entryFile, `router`)
   api.extendPackage({
